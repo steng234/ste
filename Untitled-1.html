@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html data-theme="winter"  >
+<html>
 <head>
 <title>Page Title</title>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  .html{
-    background-color:#E5E2E1
-  }
+ 
+  html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+body {
+  background-color:#E5E2E1;
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+.box {
+  outline: 50px solid var(--color-primary-dark);
+}
+#rectangle{
+    width:200px;
+    height:100px;
+    background:blue;
+}
+/* Presentation styles */
+article + * {
+  margin-top: 100px;
+}
 </style>
 </head>
 <body>
+
     <div class="flex">
     <div class="w-1/2">
         <h1 class="text-9xl font-semibold text-[#283544]">NOME LISTA</h1>
@@ -31,9 +53,10 @@
     </div>
 
 
-
-    <div class="text-4xl">
+<!--ipotetica presentazioni della lista  -->
+    <div class="text-4xl font-sans font-family: BlinkMacSystemFont">
        <p class="text-5xl pt-9 pb-9 ">chi siamo?<br></p>
+       
   Poiché i programmi raramente utilizzano contemporaneamente tutte le parti del proprio codice e dei propri dati,
  è conveniente implementare il meccanismo della memoria virtuale, che consiste nello scrivere su disco blocchi di memoria, detti "pagine",
   e di ricaricarli in memoria, leggendoli dallo stesso disco, quando è necessario. La possibilità di implementare questo meccanismo è 
@@ -44,7 +67,7 @@
 
     </div>
 
-    <!--ipotetica presentazioni della lista  -->
+    
 
 <div tabindex="0" class=" bg-[#A7C3DE] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
     <div class=" font-semibold collapse-title text-7xl ">
@@ -57,7 +80,7 @@
 
   <div tabindex="0" class="bg-[#283544] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
     <div class="collapse-title text-7xl font-semibold">
-      Assemblee
+      Gruppi di dibattiti
     </div>
     <div class="collapse-content text-4xl"> 
       <p>tabindex="0" attribute is necessary to make the div focusable</p>
@@ -66,7 +89,7 @@
 
   <div tabindex="0" class= " bg-[#A7C3DE] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
     <div class="collapse-title text-7xl font-semibold">
-      Assemblee
+      felpe e t-shirt
     </div>
     <div class="collapse-content text-4xl"> 
       <p>tabindex="0" attribute is necessary to make the div focusable</p>
@@ -75,12 +98,111 @@
 
   <div tabindex="0" class="bg-[#283544] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
     <div class="collapse-title text-7xl font-semibold">
-      Assemblee
+      Fashion week
     </div>
     <div class="collapse-content text-4xl"> 
       <p>tabindex="0" attribute is necessary to make the div focusable</p>
     </div>
   </div>
+
+  <div tabindex="0" class="bg-[#A7C3DE] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+    <div class="collapse-title text-7xl font-semibold">
+      annuario digitale
+    </div>
+    <div class="collapse-content text-4xl"> 
+      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+    </div>
+  </div>
+
+  <div tabindex="0" class="bg-[#283544] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+    <div class="collapse-title text-7xl font-semibold">
+      cineforum
+    </div>
+    <div class="collapse-content text-4xl"> 
+      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+    </div>
+  </div>
+
+  <div tabindex="0" class="bg-[#A7C3DE] text-[#FFFFFF] collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+    <div class="collapse-title text-7xl font-semibold">
+      love-box
+    </div>
+    <div class="collapse-content text-4xl"> 
+      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+    </div>
+  </div>
+
+
+
+ <!-- 
+  <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+    Save Changes
+  </button>
+  <button class="btn btn-lg text-5xl ">Assemblee</button>
+  <button class="btn btn-lg sm:btn-lg md:btn-lg lg:btn-lg">Large</button>
+  <button class="btn btn-lg">Large</button>
+  <button class="btn btn-lg">Large</button>
+ 
+  <div id="rectangle" style="width:number px; height:number px; background-color:blue"> <span class= "inline-block align-middle">asse</span></div>
+
+
+
+
+
   
+  <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+    <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    <div class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+      <div class="mx-auto max-w-md">
+        <img src="/img/logo.svg" class="h-6" alt="Tailwind Play" />
+        <div class="divide-y divide-gray-300/50">
+          <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+            <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="11" />
+                  <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                </svg>
+                <p class="ml-4">
+                  Customizing your
+                  <code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
+                </p>
+              </li>
+              <li class="flex items-center">
+                <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="11" />
+                  <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                </svg>
+                <p class="ml-4">
+                  Extracting classes with
+                  <code class="text-sm font-bold text-gray-900">@apply</code>
+                </p>
+              </li>
+              <li class="flex items-center">
+                <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="11" />
+                  <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                </svg>
+                <p class="ml-4">Code completion with instant preview</p>
+              </li>
+            </ul>
+            <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+          </div>
+          <div class="pt-8 text-base font-semibold leading-7">
+            <p class="text-gray-900">Want to dig deeper into Tailwind?</p>
+            <p>
+              <a href="https://tailwindcss.com/docs" class="text-sky-500 hover:text-sky-600">Read the docs &rarr;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+  
+
 </body>
 </html>
