@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" >
+    <head>
+        <meta charset="utf-8">
+        <title> FAQs</title>
+        <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(
+          rgba(0, 0, 40, 0.7), 
+          rgba(0, 0, 30, 0.7)
+        ), url("123.jpg");
+        background-blend-mode:darken;
+ background-size: cover;
+ font-family: 'Courier New', Courier, monospace
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.nonso {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.ohno {
+  background-color: rgba(255, 255, 255, 0.411);
+  color: rgb(255, 255, 255);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.limoni {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.limoni::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.limoni.active::after {
+  content: "\2212";
+}
+.scampia {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.magica36 {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+.button4 {
+    color: rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.411);
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 14px 16px;
+  position: absolute;
+  top: 2.5%;
+  left: 1%;
+}
+.button4:hover {background-color: rgba(255, 255, 255, 0.411);}
+a {
+  text-decoration: none;
+}
+.idk {
+  position: absolute;
+  top: 91%;
+  left: 96%;
+}
+.idk1 {
+  position: absolute;
+  top: 92%;
+  left: 92%;
+}
+        </style>
+    </head>
+<body>
+    <h1>PROPOSTE</h1>
+
+    <div class="nonso">
+      <div class="ohno">
+        <div class="limoni">
+         Assemblee d'istituto
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+        Sarebbe ideale fare 3 Assemblee,una dedicata allo sport,una dedicata alla musica e una a tema natalizio
+          </div>
+        </div>
+      </div>
+      <div class="ohno">
+        <div class="limoni">
+          Gruppi di dibattito
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+            non saprei
+          </div>
+        </div>
+      </div>
+      <div class="ohno">
+        <div class="limoni">
+        Love Box
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+               La love box sarà fisica e permettera di spedire lettere di San valentino in totale anonimato sia a prof che ada alunni
+          </div>
+        </div>
+      </div>
+      <div class="ohno">
+        <div class="limoni">
+        Felpe e T-shirt
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+           Quest'anno vorremo rivoluzionare lo stile delle felpe portandole a uno stile molto più attuale e migliorando la qualità dei materiali mantenendo dei prezzi contenuti
+          </div>
+        </div>
+      </div>
+      <div class="ohno">
+        <div class="limoni">
+         Fashion Week 
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+            Sarà una settimana in cui tutti dovranno venire vestiti con un dress code (variera per ogni giorno)
+          </div>
+        </div>
+      </div>
+      <div class="ohno">
+        <div class="limoni">
+         Annuario digitale
+        </div>
+        <div class="scampia">
+          <div class="magica36">
+            Proprio come dice l'annuario sarà digitalee sarà disponibile per tutti (ipoteticamente se ci fossero molte richieste si potrebbe fare anche la copia fisica)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    const thats = document.querySelectorAll(".limoni");
+
+thats.forEach(thats => {
+  thats.addEventListener("click", event => {
+    thats.classList.toggle("active");
+    const catanzaro = thats.nextElementSibling;
+    if(thats.classList.contains("active")) {
+      catanzaro.style.maxHeight = catanzaro.scrollHeight + "px";
+    }
+    else {
+      catanzaro.style.maxHeight = 0;
+    }
+  });
+});
+
+</script>
+
+
+</body>
+</html>
